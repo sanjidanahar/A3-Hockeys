@@ -26,6 +26,11 @@
             font-family: 'Manrope', sans-serif;
         }
     </style>
+
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/e2db83c864.js" crossorigin="anonymous"></script>
+
+    
     <!--  tailwind script -->
     <script>
         tailwind.config = {
@@ -182,54 +187,288 @@
 
 
         <!-- program section -->
-        <section>
+        <section class="my-10 mx-4">
             <div class="my-32 2 justify-center items-center pl-5 space-y-6">
                 <h3 class="text-5xl font-bold text-center">Program Sections</h3>
                 <p class="text-center lg:w-1/2 mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
                     turpis placerat dolor. Purus urna in sit nullam proin. . </p>
             </div>
             
-            <div class="grid gap-6 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2">
-              <!-- Junior Program -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+                <!--Junior Program -->
                 <div
-                    class="bg-[linear-gradient(40deg,rgba(0,0,0,0.6),rgba(0,0,0,0.1)),url(Media/2.png)] h-[338px] bg-cover text-white relative">
-                    <div class="p-10 absolute bottom-0">
-                        <h4 class="text-3xl font-bold">Junior Program</h4>
-                        <p class="mt-4 mb-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
-                            sagittis turpis in magna. Id et sed
-                            euismod natoque amet nunc morbi nulla. Tortor congue
-                            sed et in.</p>
-                        <button class="btn btn-secondary text-xl">Register Now!</button>
-                    </div>
+                  class="bg-[url('Media/2.png')] bg-no-repeat bg-cover bg-center rounded-xl"
+                >
+                  <div class="bg-opacity-50 bg-black p-10 rounded-xl">
+                    <h3 class="text-lg lg:text-2xl font-extrabold text-white">
+                      Junior Program
+                    </h3>
+                    <p class="text-gray-200 py-4">
+                      These programs may provide additional support in core subjects,
+                      foster creativity and critical thinking skills, or introduce
+                      young students to new areas of knowledge.
+                    </p>
+                    <button class="btn bg-primary-color-bg text-white mr-5 lg:mr-0 border-0">
+                      Register Now!
+                    </button>
+                  </div>
                 </div>
-
-                <!-- Teenager Program -->
+                <!--Teenager Program -->
                 <div
-                    class=" sm:row-span-1 sm:col-span-1 hidden lg:flex bg-[linear-gradient(40deg,rgba(0,0,0,0.6),rgba(0,0,0,0.1)),url(Media/3.png)] lg:h-auto lg:bg-cover relative text-white">
-                    <div class="p-10 absolute bottom-0">
-                        <h4 class="text-3xl font-bold">Teenager Program</h4>
-                        <p class="mt-4 mb-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
-                            sagittis turpis in magna. Id et sed
-                            euismod natoque amet nunc morbi nulla. Tortor congue
-                            sed et in.</p>
-                        <button class="btn btn-secondary text-xl">Register Now!</button>
-                    </div>
+                  class="bg-[url('Media/3.png')] bg-no-repeat bg-cover bg-center rounded-xl"
+                >
+                  <div class="bg-opacity-50 bg-black p-10 rounded-xl">
+                    <h3 class="text-lg lg:text-2xl font-extrabold text-white">
+                      Teenager Program
+                    </h3>
+                    <p class="text-gray-200 py-4">
+                      These programs focus on developing leadership skills, promoting
+                      self-confidence, and fostering personal growth among teenagers.
+                      They may include workshops, retreats.
+                    </p>
+                    <button class=" btn bg-primary-color-bg text-white mr-5 lg:mr-0 border-0">
+                      Register Now!
+                    </button>
+                  </div>
                 </div>
-
                 <!-- Professional Program -->
                 <div
-                    class="row-span-2 col-span-2 bg-[linear-gradient(40deg,rgba(0,0,0,0.6),rgba(0,0,0,0.1)),url(Media/4.png)] h-[450px] lg:bg-cover relative text-white ">
-                    <div class="p-10 absolute bottom-0 lg:w-1/2">
-                        <h4 class="text-3xl font-bold">Professional Program</h4>
-                        <p class="mt-4 mb-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
-                            sagittis turpis in magna. Id et sed
-                            euismod natoque amet nunc morbi nulla. Tortor congue
-                            sed et in.</p>
-                        <button class="btn btn-secondary text-xl">Register Now!</button>
-                    </div>
+                  class="bg-[url('Media/4.png')] bg-no-repeat bg-cover bg-center rounded-xl lg:col-span-2"
+                >
+                  <div class="bg-opacity-50 bg-black p-10 rounded-xl lg:pt-36">
+                    <h3 class="text-lg lg:text-2xl font-extrabold text-white">
+                      Professional Program
+                    </h3>
+                    <p class="text-gray-200 py-4 lg:w-1/2">
+                      Some professional programs offer specialized tracks or
+                      concentrations within the broader field. These allow
+                      participants to focus their studies on specific subfields or
+                      areas of interest within their profession.
+                    </p>
+                    <button class="btn bg-primary-color-bg text-white mr-5 lg:mr-0 border-0">
+                      Register Now!
+                    </button>
+                  </div>
                 </div>
+              </div>
                 <div class="border-t-2 border-gray-200 border-dashed"></div>
         </section>
+
+
+        <!-- Our New Products -->
+          <section class="my-10 mx-4">
+            <div class="mt-32 mb-16 2 justify-center items-center pl-5 space-y-6">
+                <h3 class="text-5xl font-bold text-center">Our New Products</h3>
+                <p class="text-center lg:w-1/2 mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            
+            <div class="grid gap-6 space-y-6 grid-cols-1 lg:grid-cols-2">
+                <!-- card one -->
+                <div>
+                    <div class="flex gap-6 justify-center items-center flex-col lg:flex-row space-x-2 shadow-lg p-6">
+                        <div>
+                            <img class="h-44" src="Media/5.png" alt="">
+                        </div>
+                        <div>
+                             <!-- icons -->
+                            <div class="flex mb-3 gap-5">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid text-yellow-400 fa-star"></i>
+                                    <p>5.0</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>20</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                            <p class="mt-3 mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex flex-col lg:flex-row gap-5">
+                                <h5 class="text-xl font-bold text-red-500"> Price - $22.00</h5>
+                                <p class="tedt-[rgba(19, 19, 24, 0.50)] ml-2">
+                                    <i class="fa-solid fa-truck"></i>
+                                      Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- card 2 -->
+                <div>
+                    <div class="flex gap-6 justify-center items-center flex-col lg:flex-row space-x-2 shadow-lg p-6">
+                        <div>
+                            <img class="h-44" src="Media/6.png" alt="">
+                        </div>
+                        <div>
+                             <!-- icons -->
+                            <div class="flex mb-3 gap-5">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid text-yellow-400 fa-star"></i>
+                                    <p>5.0</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>20</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                            <p class="mt-3 mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex flex-col lg:flex-row gap-5">
+                                <h5 class="text-xl font-bold text-red-500"> Price - $22.00</h5>
+                                <p class="tedt-[rgba(19, 19, 24, 0.50)] ml-2">
+                                    <i class="fa-solid fa-truck"></i>
+                                      Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- card 3 -->
+                <div>
+                    <div class="flex gap-6 justify-center items-center flex-col lg:flex-row space-x-2 shadow-lg p-6 ">
+                        <div>
+                            <img class="h-44" src="Media/7.png" alt="">
+                        </div>
+                        <div>
+                             <!-- icons -->
+                            <div class="flex mb-3 gap-5">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid text-yellow-400 fa-star"></i>
+                                    <p>5.0</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>20</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                            <p class="mt-3 mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex flex-col lg:flex-row gap-5">
+                                <h5 class="text-xl font-bold text-red-500"> Price - $22.00</h5>
+                                <p class="tedt-[rgba(19, 19, 24, 0.50)] ml-2">
+                                    <i class="fa-solid fa-truck"></i>
+                                      Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- card 4 -->
+                <div>
+                    <div class="flex gap-6 justify-center items-center flex-col lg:flex-row space-x-2 shadow-lg p-6">
+                        <div>
+                            <img class="h-44" src="Media/8.png" alt="">
+                        </div>
+                        <div>
+                             <!-- icons -->
+                            <div class="flex mb-3 gap-5">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid text-yellow-400 fa-star"></i>
+                                    <p>5.0</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>20</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                            <p class="mt-3 mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex flex-col lg:flex-row gap-5">
+                                <h5 class="text-xl font-bold text-red-500"> Price - $22.00</h5>
+                                <p class="tedt-[rgba(19, 19, 24, 0.50)] ml-2">
+                                    <i class="fa-solid fa-truck"></i>
+                                      Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- card 5 -->
+                <div>
+                    <div class="flex gap-6 justify-center items-center flex-col lg:flex-row space-x-2 shadow-lg p-6">
+                        <div>
+                            <img class="h-44" src="Media/9.png" alt="">
+                        </div>
+                        <div>
+                             <!-- icons -->
+                            <div class="flex mb-3 gap-5">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid text-yellow-400 fa-star"></i>
+                                    <p>5.0</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>20</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                            <p class="mt-3 mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex flex-col lg:flex-row gap-5">
+                                <h5 class="text-xl font-bold text-red-500"> Price - $22.00</h5>
+                                <p class="tedt-[rgba(19, 19, 24, 0.50)] ml-2">
+                                    <i class="fa-solid fa-truck"></i>
+                                      Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- card 6 -->
+                <div>
+                    <div class="flex gap-6 justify-center items-center flex-col lg:flex-row space-x-2 shadow-lg p-6">
+                        <div>
+                            <img class="h-44" src="Media/10.png" alt="">
+                        </div>
+                        <div>
+                             <!-- icons -->
+                            <div class="flex mb-3 gap-5">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid text-yellow-400 fa-star"></i>
+                                    <p>5.0</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>20</p>
+                                </div>
+                                <div class="flex gap-2 justify-center items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                            <p class="mt-3 mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex flex-col lg:flex-row gap-5">
+                                <h5 class="text-xl font-bold text-red-500"> Price - $22.00</h5>
+                                <p class="tedt-[rgba(19, 19, 24, 0.50)] ml-2">
+                                    <i class="fa-solid fa-truck"></i>
+                                      Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
     </main>
 
     <footer>
