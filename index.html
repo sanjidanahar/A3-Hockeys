@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- daisyui and tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Manrope Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,700&family=Manrope:wght@400;500;600;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- style section -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <!--  tailwind script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color-bg': '#FF4240',
+                        'primary-text-color': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="font-manrope">
+
+    <header class="container mx-auto lg:px-20 ">
+
+        <!-- navbar section -->
+        <nav class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="text-orange-600">Home</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-extrabold">Hockey’s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-orange-600">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+                <a class="btn bg-primary-color-bg text-white lg:inline-block p-3 mr-4 hidden">Get Ticket</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-8">
+
+        <!-- carousel section -->
+        <section class="px-5 lg:px-0 relative">
+            <div class="carousel w-full rounded-lg drop-shadow-md">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Media/1.png" class="w-full" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 lg:w-auto left-0">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Media/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Media/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- banner text -->
+            <div class="bg-gray-950 lg:w-1/2 mt-2 mx-0 p-8 rounded-lg lg:absolute lg:bottom-10 lg:right-10">
+                <h3 class="text-lg text-white font-extrabold mb-3">
+                    Meet all the heroes from the field
+                </h3>
+                <p class="text-gray-300">
+                    The event showcases heroes from a wide range of domains, including
+                    science and technology, medicine, arts and entertainment, sports,
+                    social activism, and more.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
